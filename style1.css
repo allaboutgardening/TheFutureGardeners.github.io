@@ -119,14 +119,14 @@ header nav ul li a.active {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #ffffff;
-    padding-left: 2.5cm;
+    padding-left: 2.2cm;
     padding-top: 0.7cm;
     font-weight: 800;
-    padding-right: 1.2cm;
+    padding-right: .6cm;
 }
 .img {
-    width: 500px;
-    padding-left: 1cm;
+    width: 450px;
+    padding-left: .5cm;
     padding-top: 0.7cm;
     
 }
