@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background: url("Logobackground.png") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header {
+    background: transparent;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+header .logo {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #46250A;
+    text-decoration: none;
+    text-decoration-color: #000000;
+    font-size: 35px;
+    padding-top: .9cm;
+}
+header nav ul {
+    display: flex;
+    font-size: 23px;
+    padding-top: .9cm;
+}
+header nav ul li a {
+    display: inline-block;
+    color: #46250A;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    transition: 0.2s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #27e701;
+    transition: 0.3s;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #ffffff;
+}
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: url(blurBg.png);
+        padding: 30px;
+        transition: 1.0s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+}
+
+.Home {
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    font-size: 27px;
+}
+
+.head {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28.5px;
+    color: #ffffff;
+    padding-left: .5cm;
+    font-weight: bolder;
+    padding-top: .7cm;
+}
+.topic {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26.8px;
+    color: #ffffff;
+    padding-left: 1.5cm;
+    padding-top: 0.9cm;
+    font-weight: bold;
+}
+.content{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    padding-left: 2.5cm;
+    padding-top: 0.7cm;
+    font-weight: 800;
+    padding-right: 1.2cm;
+}
+.img {
+    width: 500px;
+    padding-left: 1cm;
+    padding-top: 0.7cm;
+    
+}
+.video {
+    padding-top: 0.6cm;
+    padding-left: .7cm;
+    
+}
